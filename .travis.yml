@@ -2,7 +2,7 @@ language: go
 
 install: go get -v github.com/spf13/hugo
 
-script: bash script/prepare_hugo.sh && hugo && bash script/publish_docs.sh
+script: bash scripts/prepare_hugo.sh && hugo && bash scripts/publish_docs.sh
 
 notifications:
   email: false
