@@ -1,0 +1,9 @@
+addons:
+  apt:
+    packages:
+      - hugo
+
+script: bash script/prepare_hugo.sh && hugo && bash script/publish_docs.sh
+
+notifications:
+  email: false
