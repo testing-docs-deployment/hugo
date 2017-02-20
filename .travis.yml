@@ -1,7 +1,6 @@
-addons:
-  apt:
-    packages:
-      - hugo
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get hugo
 
 script: bash script/prepare_hugo.sh && hugo && bash script/publish_docs.sh
 
